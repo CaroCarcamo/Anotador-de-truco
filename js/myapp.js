@@ -7,11 +7,13 @@ $(document).ready( function() {
 			$('#sumar2').on('click', function() {fnSumar(2)});
 			$('#restar1').on('click', function() {fnRestar(1)});
 			$('#restar2').on('click', function() {fnRestar(2)});
+			$('#btnNuevaPartida').on('click', fnPasarA1);
 
 			var puntosEq1 = 0; puntosEq2 = 0; puntajeMax = 0; puntajeMin = 0;
 
 			function fnPasarA1() {
 				$('#pantalla2').removeClass('visible').addClass('oculto');
+				$('#pantalla3').removeClass('visible').addClass('oculto');
 				$('#pantalla1').removeClass('oculto').addClass('visible');
 				puntosEq1 = 0;
 				puntosEq2 = 0;
@@ -34,6 +36,13 @@ $(document).ready( function() {
 				$('#puntaje2').text(puntosEq2);
 			}
 
+			function fnPasarA3() {
+				$('#pantalla1').removeClass('visible').addClass('oculto');
+				$('#pantalla2').removeClass('visible').addClass('oculto');
+				$('#pantalla3').removeClass('oculto').addClass('visible');
+				$('#ganador').html('Ganador: ' + nombreGanador);
+			}
+
 			function fnPartidaA(pMax) {
 				if (pMax == 24) {
 					$('#puntos').text("a 24");
@@ -52,9 +61,9 @@ $(document).ready( function() {
 					$('#puntaje1').text(puntosEq1);
 					fnFosforos(1);
 					if (puntosEq1 == puntajeMax) {
-						ne1 = $('#equipo1').val()
-						alert("Felicidades! Ganador: " + ne1);
-						fnPasarA1();
+						ne1 = $('#equipo1').val();
+						nombreGanador = ne1;
+						fnPasarA3();
 					}	
 				} else if (equipo == 2 && puntosEq2 < puntajeMax) {
 					puntosEq2++;
@@ -62,8 +71,8 @@ $(document).ready( function() {
 					fnFosforos(2);	
 					if (puntosEq2 == puntajeMax) {
 						ne2 = $('#equipo2').val()
-						alert("Felicidades! Ganador: " + ne2);
-						fnPasarA1();
+						nombreGanador = ne2;
+						fnPasarA3();
 					}
 				}
 			}
@@ -116,5 +125,7 @@ $(document).ready( function() {
 						}
 				}
 			}
+
+			
 		
 		});
