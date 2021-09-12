@@ -1,0 +1,136 @@
+* {
+	font-family: sans-serif;
+}
+
+.visible {
+	display: block;
+	visibility: visible;
+	background-color: green;
+	text-align: center;
+}
+
+.oculto {
+	display: none;
+	visibility: hidden;
+}
+
+.pantalla1 {
+	width: 400px;
+	height: 510px;
+}
+
+.pantalla2 {
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 320px;
+	height: 510px;
+}
+
+.cajaTexto {
+	width: 250px;
+	height: 40px;
+	margin-top: 70px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	border-width: 1px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: white;
+}
+
+.boton {
+	width: 125px;
+	height: 40px;
+	margin-top: 70px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	border-width: 1px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: white;
+}
+
+.boton2 {
+	width: 125px;
+	height: 40px;
+	margin-top: 70px;
+	margin-left: 125px;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	border-width: 1px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: white;
+}
+
+.boton3 {
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	border-width: 1px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: white;
+}
+
+.margen10px {
+	margin-top: 10px;
+}
+
+.alinearIzq {
+	float: left;
+	margin-right: 10px;
+}
+
+.alinearDer {
+	float: right;
+	margin-left: 10px;
+}
+
+#puntos {
+	border-color: transparent;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.nombresEquipos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	font-size: 20px;
+}
+
+.botonesypuntajes {
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.puntajes {
+	font-size: 50px;
+}
+
+img {
+	width: 45px;
+	height: 45px;
+	margin-top: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+}

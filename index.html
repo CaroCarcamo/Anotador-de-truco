@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anotador de truco</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<section id="pantalla1" class="visible pantalla1">
+		<article>
+			<input class="cajaTexto" type="text" name="equipo1" id="equipo1" placeholder="Equipo 1"/>
+			<input class="cajaTexto" type="text" name="equipo2" id="equipo2" placeholder="Equipo 2"/>
+		</article>
+		<article>
+			<input class="boton" type="button" name="btn24" id="btn24" value="A 24"/>
+			<input class="boton" type="button" name="btn30" id="btn30" value="A 30"/>
+		</article>
+		<article>
+			<button class="boton2" id="btnInicio">Iniciar</button>
+		</article>
+	</section>
+
+
+	<section id="pantalla2" class="oculto pantalla2"/>
+		<article>
+			<article class="nombresEquipos">
+				<input class="boton3 alinearIzq margen10px" type="button" name="sumar1" id="sumar1" value="+"/>
+				<p id="nombreEq1"></p>
+				<hr id="hr">
+				<p id="nombreEq2"></p>
+				<input class="boton3 alinearDer margen10px" type="button" name="sumar2" id="sumar2" value="+"/>
+			</article>
+			<br><hr>
+		</article>
+		<article>
+			<img id="img1" src="imagenes\0.png">
+			<img id="img7" src="imagenes\0.png">
+			<img id="img2" src="imagenes\0.png">
+			<img id="img8" src="imagenes\0.png">
+			<img id="img3" src="imagenes\0.png">
+			<img id="img9" src="imagenes\0.png">
+			<br><hr>
+		</article>
+		<article>
+			<img id="img4" src="imagenes\0.png">
+			<img id="img10" src="imagenes\0.png">
+			<img id="img5" src="imagenes\0.png">
+			<img id="img11" src="imagenes\0.png">
+			<img id="img6" src="imagenes\0.png">
+			<img id="img12" src="imagenes\0.png">
+		</article>
+		<article>
+			<p id="puntos"></p>
+		</article>
+		<article class="botonesypuntajes">
+			<input class="boton3 alinearIzq" type="button" name="restar1" id="restar1" value="-"/>
+			<p class="puntajes" id="puntaje1"></p>
+			<button class="boton3" id="btnFin">Fin</button>
+			<p class="puntajes" id="puntaje2"></p>
+			<input class="boton3 alinearDer" type="button" name="restar2" id="restar2" value="-"/>
+		</article>
+	</section>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/myapp.js"></script>
+</body>
+</html>
